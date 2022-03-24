@@ -42,9 +42,11 @@ body {
 
 .rateUs {
   /* overflow: auto; */
+  
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
   align-items: center;
   overflow: hidden;
   font-size: 1em;
@@ -55,9 +57,9 @@ body {
 }
 
 .ratingContainer{
-  overflow: auto;
-
+  padding-bottom: 1vh;
   width: 90%;
+  height: 25%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -106,9 +108,9 @@ body {
   background-color: hsl(25, 97%, 53%);
   border: 1px transparent;
   border-radius: 1vw;
-  padding: 2vh;
+  padding: 1vh;
   width: 90%;
-  padding: 0.8rem;
+  /* padding: 0.8rem; */
   color: hsl(0, 0%, 100%);
   display: inline-block;
   font-size: large;
@@ -165,7 +167,7 @@ body {
 }
 
 .submitted-rating img{
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
     /* width: 50%; */
     height: 25%;
 }
@@ -203,6 +205,7 @@ body {
 @media only screen and (max-width: 800px) {
 
   .rateUs{
+    overflow: auto;
     width: 90%;
     height: 60%;
     border-radius: 4vw;
@@ -226,5 +229,19 @@ body {
 
   .submitted-rating{
     width: 95%;
+  }
+}
+
+
+/* 
+#submitButton{
+  height: 6%;
+}
+  */
+
+
+@media only screen and (min-width:2100px){
+  body{
+    font-size: 1vw;
   }
 }
