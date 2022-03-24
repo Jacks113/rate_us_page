@@ -1,5 +1,19 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  font-family: url('https://fonts.google.com/specimen/Overpass;'), Times, serif;
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center; 
+  align-items: center; 
 }
 
 .App-logo {
@@ -35,4 +49,130 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.rateUs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 35vw;
+  height: 50vh;
+  background-color: rgba(29,34,45,255);
+  border-radius: 1vw;
+}
+
+.ratingContainer{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.ratingButton{
+  height: 6vmin;
+  width: 6vmin;
+  border-radius: 3vmin;
+  padding: 2vmin;
+}
+
+.not-selected{
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(216, 12%, 54%);
+}
+
+.ratingButton:hover{
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+
+#submitButton{
+  background-color: hsl(25, 97%, 53%);
+  border: 1px transparent;
+  border-radius: 1vw;
+  padding: 50px;
+  width: 90%;
+  padding: 0.8rem;
+  color: hsl(0, 0%, 100%);
+  display: inline-block;
+  font-size: large;
+}
+
+#submitButton:hover{
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.selected{
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+.description-rating{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  text-align: justify;
+}
+
+.description-rating img{
+  width: 8%;
+}
+
+.description-rating p{
+  	color: hsl(217, 12%, 63%);
+}
+
+.description-rating h2{
+  	color: hsl(0, 0%, 100%);
+}
+
+.thanks{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  width: 40vw;
+  height: 50vh;
+  background-color: rgba(29,34,45,255);
+  border-radius: 1vw;
+}
+
+.submitted-rating{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.submitted-rating img{
+  width: 30%;
+  margin: 5%;
+}
+
+.submitted-rating p{
+  text-align: center;
+  color: hsl(217, 12%, 63%);
+}
+
+.submitted-rating h2{
+  	color: hsl(0, 0%, 100%);
+}
+
+.submitted-rating p:first-of-type{
+  width: 50%;
+  padding: 0.5em;
+  margin-top: 3em;
+  background-color: rgba(39,46,56,255);
+  border-radius: 1em;
+  color: hsl(25, 97%, 53%);
+  margin: auto;
 }

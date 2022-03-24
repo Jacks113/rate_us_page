@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Rating from './components/Rating';
+import Submitted from './components/Submitted';
+import {useState} from "react";
+// import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 function App() {
+
+  const [rating, setRating] = useState("")
+
+  const handleRating = ratingValue => {
+    setRating(ratingValue);
+    // console.log(ratingValue);
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+        { rating ?  <Submitted rating={rating}/> : 
+         <Rating handleRating = {handleRating} />}
+      </div>
+
+    
   );
 }
 
