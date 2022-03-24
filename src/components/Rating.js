@@ -41,7 +41,10 @@ export default function Rating(props){
 
     return <div className="rateUs">
                 <div className="description-rating">
-                    <img src="..\images\icon-star.svg" alt="star"/>
+                    <figure className="star"> 
+                        <img src="..\images\icon-star.svg" alt="star"/>
+                    </figure>
+                    
                     <h2>How did we do?</h2>
                     <p>Please let us know how we did with your support request. All feedback is appreciated 
                         to help us improve our offering!
