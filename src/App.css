@@ -91,7 +91,7 @@ body {
 
 #submitButton{
   background-color: hsl(25, 97%, 53%);
-  border-radius: 5px;
+  border-radius: 1em;
   border: none;
   width: 90%;
   height: 10%;;
@@ -249,6 +249,5 @@ body {
   #submitButton{
     height: 11%;
     font-size: medium;
-    border-radius: 1em;
   }
 }
