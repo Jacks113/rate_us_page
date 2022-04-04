@@ -298,7 +298,7 @@ body {
 }
 
 
-@media only screen and (max-height: 500px) {
+@media only screen and (max-height: 650px) {
   
   .rateUs{
     width: 90vw;
@@ -339,14 +339,6 @@ body {
   }
 }
 
-
-@media only screen and (max-width:300px) {
-  
-  body{
-    font-size:10px;
-  }
-}
-
 @media only screen and (max-height:300px) {
   body{
     font-size:8px;
@@ -368,7 +360,7 @@ body {
 @media only screen and (max-width:300px) {
   
   body{
-    font-size:20px;
+    font-size:10px;
   }
 }
 
