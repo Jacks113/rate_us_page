@@ -213,11 +213,7 @@ body {
 
 
 @media only screen and (max-height: 600px) {
-  
-  .rateUs{
-    width: 90vw;
-    height: 90vh;
-  }
+
   
   .thanks{
     width: 90vw;
@@ -254,16 +250,15 @@ body {
 }
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
   
-  .rateUs{
-    width: 90vw;
-    height: 90vh;
+  body{
+    font-size: 10px;
   }
   
   .thanks{
     width: 90vw;
-    height: 90vh;
+    height: 50vh;
   }
 
   .submitted-rating{
@@ -277,7 +272,7 @@ body {
 
 
   .description-rating p{
-    font-size: 0.9em;
+    font-size: 1.5em;
   }
 
   .ratingButton{
@@ -344,23 +339,18 @@ body {
   }
 }
 
-@media only screen and (max-height:300px) {
-  
-  body{
-    font-size:8px;
-  }
-}
-
 
 @media only screen and (max-width:300px) {
   
   body{
-    font-size:20px;
+    font-size:10px;
   }
 }
 
 @media only screen and (max-height:300px) {
-  
+  body{
+    font-size:8px;
+  }
   .rateUs{
     height:250px;
   }
@@ -372,7 +362,6 @@ body {
     height:250px;
     font-size: 10px;
   }
-
 
 }
 
